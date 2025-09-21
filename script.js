@@ -56,3 +56,25 @@ function startAuto() {
 }
 showSlide(0);
 startAuto();
+
+const form = document.getElementById('contactForm');
+const modalBg = document.getElementById('modalBg');
+const modalClose = document.getElementById('modalClose');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  modalBg.classList.add('active');
+  document.body.classList.add('modal-open');
+});
+
+modalClose.addEventListener('click', function() {
+  modalBg.classList.remove('active');
+  document.body.classList.remove('modal-open');
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === "Escape" && modalBg.classList.contains('active')) {
+    modalBg.classList.remove('active');
+    document.body.classList.remove('modal-open');
+  }
+  });
