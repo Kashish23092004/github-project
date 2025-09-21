@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>josh demo website</title>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Land</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head">
-        <div>
-            <nav class="header" >
-                <div>
-         <a href="#">Home</a>
-         <a href="#">Product</a>
-         <a href="#">Pricing</a>
-         <a href="#">About</a>
-         <a href="#">Contact</a>
-       </div>
-       <div class="logo">
-        <img src="assets/logo.png"/>
-       </div>
-       <div class="icon">
-            <img src="assets/twitter.png">
-            <img src="assets/fb.png">
-            <img src="assets/linkedin.png">
-            </div>
-        </nav>
-        </div>
-        
-       <div class="content">
-           <div class="topic1">
-            <p>The best products </p>
-            <p class="start">start with Figma</p>
-           </div>
-            <div class="topic2">
-            <p>Most calendars are designed for teams. Slate is designed </p>
-<p class="free">for freelancers</p>
-           </div>
-        </div>
-         <button class="try">Try for free</button>
-        </div>
+  <header class="hero-header">
+    <div class="hero-nav-row">
+      <nav class="hero-nav">
+        <a  href="#">Home</a>
+        <a href="#">Product</a>
+        <a  href="#">Pricing</a>
+        <a  href="#">About</a>
+        <a  href="#">Contact</a>
+      </nav>
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="FIGMA LAND">
+      </div>
+      <div class="hero-social">
+        <a href="#" aria-label="Twitter"><img src="assets/twitter.png" alt="Twitter"></a>
+        <a href="#" aria-label="Facebook"><img src="assets/fb.png" alt="Facebook"></a>
+        <a href="#" aria-label="LinkedIn"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <main class="hero-main">
+      <h1 class="hero-title">
+        The best products<br><span>start with Figma</span>
+      </h1>
+      <p class="hero-description">Most calendars are designed for teams. Slate is designed<br>for freelancers</p>
+      <button class="hero-btn">Try for free</button>
+    </main>
+  </header>
 </body>
-<script src="script.js"/>
 </html>
